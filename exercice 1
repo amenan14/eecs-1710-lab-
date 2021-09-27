@@ -1,0 +1,41 @@
+PFont font;
+PImage img;
+int fontSize=24;
+String message= " Hello World!";
+
+int colorRange=55;
+int colorOffset=200;
+
+void setup() {
+  size(1080,1200,P2D);
+  frameRate(60);
+ 
+ img = loadImage("Character_Kamisato_Ayaka_Card.png");
+ 
+   font= createFont("Times New Romam",fontSize);
+   textFont(font,fontSize);
+   textAlign(CENTER);
+   
+   //these will draw only once
+   background(colorOffset+ random(0,colorRange),colorOffset+random(0,colorRange),colorOffset+random(0,colorRange));
+   image(img,0,0);
+ 
+}
+
+void draw() {
+  imageMode(CENTER);
+image(img,50,50,80,80);
+ if(mousePressed) {
+   if(mouseX<width/2) {
+     fill(255,127,0);
+     text(message,mouseX,mouseY);
+   }
+ }
+ 
+line(width/2,0,width/2,height);
+
+
+surface.setTitle(""+frameRate);
+}
+  
+ 
