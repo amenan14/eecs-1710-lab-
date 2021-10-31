@@ -51,7 +51,7 @@ class Plant {
     if (isBothered) {
       isHunting = false;
       botheredMarkTime = t;
-      plantCurrent = plant04; // worried expression
+      plantCurrent = plant04; 
       if (position.dist(target) < triggerDistance2) {
         pickEscapeTarget();
       }
@@ -64,12 +64,12 @@ class Plant {
       }
   
       if (isBlinking) {
-        plantCurrent = plant02; // blink with happy expression
+        plantCurrent = plant02; 
       } else {
         plantCurrent = plant01; // happy expression
       }   
       
-      // Steve heads toward food if happy
+      
       if (!isHunting) {
         pickFoodTarget();
         isHunting = true;
