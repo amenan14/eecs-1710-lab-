@@ -9,7 +9,7 @@ class Plant {
   
   boolean isBothered = false;
   int botheredMarkTime = 0;
-  int botheredTimeout = 1000; // Processing measures time in milliseconds
+  int botheredTimeout = 1000; 
   float botheredSpread = 5;
   
   boolean isBlinking = false;
@@ -23,7 +23,7 @@ class Plant {
   float triggerDistance2 = 25;
   float movementSpeed = 0.08;
       
-  // This is the constructor; it needs to have the same name as the class.
+  
   Plant(float x, float y) {    
     position = new PVector(x, y);
   
