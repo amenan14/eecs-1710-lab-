@@ -1,4 +1,4 @@
-
+// inspired by the PixelExemple07 from week 10
 Dot player;
 
 PVector spawn;
